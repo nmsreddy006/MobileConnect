@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: mconnect
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/mconnect?zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    org:
+      hibernate:
+        SQL=DEBUG:
+      springframework: info
